@@ -9,3 +9,4 @@ A ready-to-edit template for book-style compilations (in LaTeX).
 ### Useful resources
 * If you are new to LaTeX, I'll strongly recommend that you use [Gummi](http://gummi.midnightcoding.org/) and [LaTeXila](http://projects.gnome.org/latexila/) LaTeX editors together to edit LaTeX files. I especially like the "[Live Preview](http://dev.midnightcoding.org/attachments/download/241/gummi060-1.png)" option of [Gummi](http://gummi.midnightcoding.org/) which shows the PDF preview in real-time (correspoding to the LaTeX source edits made by the user).
 * [Books about TeX and Friends](http://www.tug.org/books/) webpage on _TeX Users Group_ website.
+* Free, community driven Q&A for users of TeX, LaTeX, ConTeXt, and related typesetting systems: [http://tex.stackexchange.com/](http://tex.stackexchange.com/)
