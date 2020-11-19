@@ -1,0 +1,79 @@
+%% example of using https://ctan.org/pkg/bookcover
+%% inspired by https://tex.stackexchange.com/a/232723
+
+\documentclass[marklength=0mm,
+    coverwidth=148.5mm,
+    coverheight=210mm,
+    bleedwidth=0mm,
+    spinewidth=10mm]{bookcover}
+
+\usepackage{blindtext}
+\usepackage{graphicx}
+
+\begin{document}
+
+%% Back Cover
+\setbookcover{bgcolor}{back}{%
+  color=yellow!20,
+}
+
+\setbookcover{fgsecond}{back}{%
+  \vspace{2.5cm}
+  \centering
+  %\scalebox{3.5}{\includegraphics{book-template/back-cover.jpg}}
+  \vfill
+}
+
+\setbookcover{fgfirst}{back}{%
+  \centering
+  \begin{minipage}[c]{.7\textwidth} {
+    \vspace*{4cm}
+    \Large Back}
+    \vspace*{4cm}
+    \blindtext
+  \end{minipage}
+}
+
+
+%% Front cover
+\setbookcover{bgcolor}{front}{%
+  color=yellow!20,
+}
+
+\setbookcover{fgsecond}{front}{%
+  \vspace{3cm}
+  \centering
+  %\scalebox{3.5}{\includegraphics{book-template/front-cover.jpg}}
+  \vfill
+}
+
+\setbookcover{fgfirst}{front}{%
+  \centering
+  \begin{minipage}[c]{.7\textwidth}{
+    \vspace*{4cm}
+    \Large Front}
+    \vspace*{4cm}
+    \blindtext
+  \end{minipage}
+}
+
+
+%% Spine
+\setbookcover{bgcolor}{spine}{%
+  color=yellow!50,
+}
+
+\setbookcover{fgfirst}{spine}{
+  \vfill
+  \centering
+  %% 90 degree rotation so that the spine text appears correctly
+  \rotatebox[origin=c]{90}{\hspace{3cm}Lorem ipsum\hspace{2cm}
+  \begin{tabular}{c}
+    Etiam lobortis facilisis sem.\\
+    Nullam nec mi et neque pharetra sollicitudin.
+  \end{tabular}}
+  \vfill
+}
+
+\makebookcover
+\end{document}
